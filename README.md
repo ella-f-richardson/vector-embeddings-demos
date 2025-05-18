@@ -41,3 +41,11 @@ These notebooks are also provided, but aren't necessary unless you're generating
 
 * [Generate OpenAI embeddings for datasets](prep_openai.ipynb)
 * [Generate Word2Vec embeddings for datasets](prep_word2vec_gnews.ipynb)
+
+## Resources
+
+Each notebook has resources at the bottom to dig further into that topic. Here are some additional general resources:
+
+* [Poster: Visual exploration of vectors (PyCon 2025)](https://tinyurl.com/visual-vectors-poster)
+* [Livestream Recording: Vector Embeddings](https://www.youtube.com/watch?v=lyIJcHKA6b0) from [Python + AI Series](https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/learn-python--ai-from-our-video-series/4400393)
+
