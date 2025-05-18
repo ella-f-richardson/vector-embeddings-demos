@@ -48,4 +48,4 @@ Each notebook has resources at the bottom to dig further into that topic. Here a
 
 * [Poster: Visual exploration of vectors (PyCon 2025)](https://tinyurl.com/visual-vectors-poster)
 * [Livestream Recording: Vector Embeddings](https://www.youtube.com/watch?v=lyIJcHKA6b0) from [Python + AI Series](https://techcommunity.microsoft.com/blog/EducatorDeveloperBlog/learn-python--ai-from-our-video-series/4400393)
-
+* [Vector compression techniques](https://github.com/microsoft/rag-time/tree/main/Journey%203%20-%20Optimize%20your%20Vector%20Index%20for%20Scale)
