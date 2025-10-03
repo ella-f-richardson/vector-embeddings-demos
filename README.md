@@ -19,6 +19,8 @@ Vector embeddings are commonly used for similarity search, fraud detection, reco
 
 This repository contains a visual exploration of vectors, using several embedding models.
 
+## Getting started
+
 Before running the notebooks, install the requirements:
 
 ```shell
@@ -41,6 +43,39 @@ These notebooks are also provided, but aren't necessary unless you're generating
 
 * [Generate OpenAI embeddings for datasets](prep_openai.ipynb)
 * [Generate Word2Vec embeddings for datasets](prep_word2vec_gnews.ipynb)
+
+## Deploying Azure OpenAI embedding models
+
+If you need to generate new OpenAI embeddings, you'll need access to the embedding models via the API. This project includes infrastructure as code (IaC) to provision an Azure OpenAI deployment of "text-embedding-3-large". The IaC is defined in the `infra` directory and uses the Azure Developer CLI to provision the resources.
+
+1. Make sure the [Azure Developer CLI (azd)](https://aka.ms/install-azd) is installed.
+
+2. Login to Azure:
+
+    ```shell
+    azd auth login
+    ```
+
+    For GitHub Codespaces users, if the previous command fails, try:
+
+   ```shell
+    azd auth login --use-device-code
+    ```
+
+3. Provision the OpenAI account:
+
+    ```shell
+    azd provision
+    ```
+
+    It will prompt you to provide an `azd` environment name (like "vector-demos"), select a subscription from your Azure account, and select a location. Then it will provision the resources in your account.
+
+4. Once the resources are provisioned, you should now see a local `.env` file with all the environment variables needed to run the scripts.
+5. To delete the resources, run:
+
+    ```shell
+    azd down
+    ```
 
 ## Resources
 
