@@ -1,0 +1,13 @@
+{
+  // Keep strong linting in .py files
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUndefinedVariable": "warning"
+  },
+
+  // Apply notebook-specific settings
+  "[jupyter]": {
+    "python.analysis.diagnosticSeverityOverrides": {
+      "reportUndefinedVariable": "none"
+    }
+  }
+}
