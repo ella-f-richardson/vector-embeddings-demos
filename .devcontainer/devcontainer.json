@@ -13,6 +13,7 @@
             // Set *default* container specific settings.json values on container create.
             "settings": {
                 "python.defaultInterpreterPath": "/usr/local/bin/python",
+				"jupyter.kernels.excludePythonEnvironments": ["/usr/bin/python3", "/bin/python3"],
                 "remote.autoForwardPorts": false
             },
 
